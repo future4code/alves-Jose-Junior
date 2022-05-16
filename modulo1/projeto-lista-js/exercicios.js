@@ -19,14 +19,14 @@ function imprimeMensagem() {
 // EXERCÍCIO 01
 function calculaAreaRetangulo() {
   // implemente sua lógica aqui
- let altura = 3
- let largura = 5
- let area = (altura * largura)
- console.log(area)
-  altura = 2
-  largura = 6
-    area = (altura * largura)
- console.log(area)
+//  let altura = 3
+//  let largura = 5
+//  let area = (altura * largura)
+//  console.log(area)
+//   altura = 2
+//   largura = 6
+//     area = (altura * largura)
+//  console.log(area)
 }
 
 // EXERCÍCIO 02
