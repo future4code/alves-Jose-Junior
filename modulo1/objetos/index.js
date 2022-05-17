@@ -74,17 +74,17 @@
     
 //     b) Explique o valor impresso no console. Você sabe por que isso aconteceu?
     
-    const cachorro = {
-        nome: "Juca", 
-        idade: 3, 
-        raca: "SRD"
-    }
+    // const cachorro = {
+    //     nome: "Juca", 
+    //     idade: 3, 
+    //     raca: "SRD"
+    // }
     
-     const gato = {...cachorro, nome: "Juba"}
+    //  const gato = {...cachorro, nome: "Juba"}
     
-     const tartaruga = {...gato, nome: gato.nome.replaceAll("a", "o")}
+    //  const tartaruga = {...gato, nome: gato.nome.replaceAll("a", "o")}
     
-    console.log(cachorro)
-    console.log(gato)
-    console.log(tartaruga)
+    // console.log(cachorro)
+    // console.log(gato)
+    // console.log(tartaruga)
     
