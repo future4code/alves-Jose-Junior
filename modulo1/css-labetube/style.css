@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: grid;
+    align-content: center;
+    justify-content: start;
+    background-color: orange;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-template-columns: auto 1fr auto;
+
+}
+
+header > input{
+    grid-column: 3;
+    border: 1px solid black;
+}
+
+footer {
+    display: grid;
+    padding: 20px 0 20px 0 ;
+    background: rgb(85, 84, 84);
+    color: white;
+    
+    
+}
+
+.video1 {
+    display: grid;
+    margin: auto;
+    border: 1px solid black;
+}
