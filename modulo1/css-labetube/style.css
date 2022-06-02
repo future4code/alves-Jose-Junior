@@ -19,13 +19,34 @@ header > input{
     border: 1px solid black;
 }
 
+section {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 36px;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 50px;
+    grid-gap:16px;
+
+}
+
+img {
+    height: 45vh;
+    width: 45vh;
+    border: solid 1px black;
+}
+p {
+    box-shadow: 0.5px 0.5px 1px rgb(2, 2, 15);
+    
+}
+
 footer {
-    display: grid;
-    padding: 20px 0 20px 0 ;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
     background: rgb(85, 84, 84);
-    color: white;
-    
-    
+    color: white; 
+    text-align: center;
 }
 
 .video1 {
@@ -33,3 +54,18 @@ footer {
     margin: auto;
     border: 1px solid black;
 }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    main {
+        flex-direction: column;
+    }
+    footer > h1::after {
+            content: "mobile";
+            font-size: small;
+            color: rgb(142, 142, 252);
+        }
+        
+    } 
+    footer{
+        font-size: 2vh;
+    }
