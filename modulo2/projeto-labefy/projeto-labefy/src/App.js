@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import axios from "axios";
+import CreatePlayList from "./pages/CreatePlayList";
+import PlayList from "./pages/playList";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends React.Component {
+  state = {
+    telaAtual: "cadastro"
 }
 
-export default App;
+mudarTela = () => {
+  switch (this.state.telaAtual){
+    case "cadastro": 
+      return <CreatePlayList irParaPlayList={this.irParaPlayList}/>
+    case "playlist":
+      return <PlayList irParaCadastro={this.irParaCadastro} />
+    default: 
+      return <CreatePlayList />
+  }
+}
+
+irParaCadastro = () => {
+ this.setState({telaAtual: "cadastro"})
+}
+
+irParaPlayList =() => {
+  this.setState({telaAtual: "playlist"})
+}
+
+  render() {
+    return (
+      <div>
+        {this.mudarTela()}
+      </div>
+    )
+  }
+}
+
+
