@@ -1,5 +1,4 @@
 import Post from './components/Post';
-import { useState } from 'react';
 
 
 function App() {
