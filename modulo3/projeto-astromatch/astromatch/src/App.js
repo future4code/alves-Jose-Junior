@@ -1,15 +1,13 @@
-import React from "react";
-import { useState } from "react";
-import styled from "styled-components";
-import Header from "./components/Header";
+import React from 'react';
+import Main from './components/Main/Main';
+import ResetButton from './components/ResetButton/ResetButton';
 
-const DivPrincipal = styled.div`
-  
-  `
+
 export default function App() {
   return (
     <div>
-      <Header/>
+      <Main/>
+      <ResetButton/>
     </div>
   );
 }
