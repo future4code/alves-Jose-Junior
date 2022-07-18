@@ -1,8 +1,9 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
-import { CreateTripPage } from "./Pages/CreateTripPage";
-import { TripDetailPage } from "./Pages/TripDetailPage";
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { Router } from "./Router/Router";
+// import { useNavigate } from "react-router-dom";
+// import { CreateTripPage } from "./Pages/CreateTripPage";
+// import { TripDetailPage } from "./Pages/TripDetailPage";
+// import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 export default function App() {
   // const navigate = useNavigate()
@@ -13,26 +14,15 @@ export default function App() {
 
   return (
     <div>
-      <BrowserRouter>
-        <Routes>
-          <Route index element={<TripDetailPage />} />
-          <Route path="CreateTripPage" element={<CreateTripPage />} />
-
-
-
-        </Routes>
-        
-        
-
-      </BrowserRouter>
-
-
-      <div>
+      <Router />
+      {/* <div>
+        <Router />
         <p>Teste</p>
-
+        
+        
       </div>
 
-      <button>Mudar página</button>
+      <button>Mudar página</button> */}
 
     </div>
   );

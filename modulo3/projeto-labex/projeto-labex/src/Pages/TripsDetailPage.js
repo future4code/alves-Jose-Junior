@@ -1,6 +1,6 @@
 import React from "react";
 
-export const TripDetailPage = () => {
+export const TripsDetailPage = () => {
     return(
         <p>TripDetailPage</p>)
 }
