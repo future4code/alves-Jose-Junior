@@ -2,7 +2,7 @@ export const goToRecipesList = (navigate) =>{
     navigate("/")
 }
 
-export const goToSingUp = (navigate) =>{
+export const goToSignUp = (navigate) =>{
     navigate("/cadastro")
 }
 
