@@ -1,21 +1,13 @@
 import { Router } from "./Routes/Router";
 import React from "react";
-// import AddRecipesPage from "./pages/AddRecipesPage/AddRecipesPage"
-// import LoginPage from "./pages/LoginPage/LoginPage"
-// import RecipesDetailPage from "./pages/RecipesDetailPage/RecipesDetailPage"
-// import RecipesListPage from "./pages/RecipesListPage/RecipesListPage"
-// import SingUpPage from "./pages/SingUpPage/SingUpPage"
+import theme from "./constants/theme";
+import { ThemeProvider } from "@mui/material/styles";
 
 const App = () => {
   return (
-    <div>
-      {/* <AddRecipesPage />
-      <LoginPage />
-      <RecipesDetailPage />
-      <RecipesListPage />
-      <SingUpPage /> */}
+    <ThemeProvider theme={theme}>
       <Router/>
-    </div>
+    </ThemeProvider>
   );
 }
 

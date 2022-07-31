@@ -15,7 +15,7 @@ export const goToAddRecipes = (navigate) =>{
 }
 
 export const goToRecipesDetail = (navigate,id) =>{
-    navigate("/detalhes/${id}")
+    navigate(`/detalhes/${id}`)
 }
 
 export const goBack = (navigate) => {
