@@ -6,10 +6,12 @@ import LoginPage from "../pages/LoginPage/LoginPage";
 import RecipesDetailPage from "../pages/RecipesDetailPage/RecipesDetailPage";
 import RecipesListPage from "../pages/RecipesListPage/RecipesListPage"
 import SingUpPage from "../pages/SingUpPage/SingUpPage";
+import Header from "../components/Header/Header"
 
 export const Router = () => {
     return (
         <BrowserRouter>
+        <Header/>
             <Routes>
                 <Route index element={<RecipesListPage/>} />
                 <Route path="login" element={<LoginPage/>}/>

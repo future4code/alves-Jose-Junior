@@ -5,7 +5,9 @@ const RecipesListPage = () => {
     return (
         <div>
             <h2>RecipesListPage</h2>
-            <Button variant="outlined">Primary</Button>
+            <Button variant="contained">
+                Clica aqui!
+            </Button>
         </div>
     )
 }
