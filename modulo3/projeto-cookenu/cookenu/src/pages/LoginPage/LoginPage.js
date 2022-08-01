@@ -5,13 +5,15 @@ import { Button } from "@mui/material";
 import LoginForm from "./LoginForm";
 import { useNavigate } from "react-router-dom"
 import { goToSignUp } from "../../Routes/coordinator";
+import useUnprotectedPage from "../../hooks/useUnprotectedPage"
 
-const LoginPage = () => {
+const LoginPage = ({setRightButtonText}) => {
+    useUnprotectedPage()
     const navigate = useNavigate()
     return (
         <ScreenContainer>
             <LogoImage src={logo} />
-            <LoginForm />
+            <LoginForm setRightButtonText={setRightButtonText}/>
             <SignUpButtonContainer>
                 <Button
                     onClick={() => goToSignUp(navigate)}
