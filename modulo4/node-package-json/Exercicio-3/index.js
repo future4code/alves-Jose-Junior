@@ -10,4 +10,4 @@ const adicionaTarefas = (tarefa) => {
     return(`Tarefa adicionada com sucesso!`)
 }
 
-console.log(adicionaTarefas([process.argv[2]]),"Tarefas:", tarefas)
+console.log(adicionaTarefas([process.argv[2]]),"Tarefas:", tarefas )
