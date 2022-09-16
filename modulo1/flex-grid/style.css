@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px 0 16px;
+    background-color:  mediumvioletred ;
+    height: 50px;
+
+}
+header>img{
+    align-items: center;
+    width: 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 32px 0 32px;
+    background-color: mediumvioletred;
+
+} 
+    
